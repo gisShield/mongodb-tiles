@@ -24,7 +24,7 @@ app.get('/getimage/',function(req, res) {
 				res.writeHead('200', {'Content-Type': 'image/png'});    //写http头部信息
 				res.end(img,'binary'); 
 			}else{
-				res.sdtatus(404);
+				res.status(404);
 				res.end()
 			}
 			
